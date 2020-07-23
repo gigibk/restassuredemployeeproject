@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EmployeeRESTASSUERDAPIsuite" >
+
+  <listeners>
+    
+       <listener class-name="com.employeeAPI.utilities.HtmlReport"/> 
+      </listeners>
+
+   <test name="EmployeeRestAPI Tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+                      <class name="com.employeeAPI.testcases.TC001_GET_All_Employees"/>
+                    <!--    <class name="com.employeeAPI.testcases.TC002_GET_Single_Employee_Record"/>
+                      <class name="com.employeeAPI.testcases.TC003_POST_Employee_Record"/>
+                      <class name="com.employeeAPI.testcases.TC004_PUT_Employee_Record"/>
+                      <class name="com.employeeAPI.testcases.TC005_DELETE_Employee_Record"/>-->
+                                          
+    </classes>
+  </test>
+</suite>

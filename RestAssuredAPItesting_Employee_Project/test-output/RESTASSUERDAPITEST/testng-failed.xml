@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RESTASSUERDAPITEST]">
+  <test thread-count="5" name="RestAPIEmployeeApp Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.employeeAPI.testcases.TC001_GET_All_Employees">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="getAllEmploees"/>
+          <include name="checkResponseTime"/>
+        </methods>
+      </class> <!-- com.employeeAPI.testcases.TC001_GET_All_Employees -->
+    </classes>
+  </test> <!-- RestAPIEmployeeApp Tests(failed) -->
+</suite> <!-- Failed suite [RESTASSUERDAPITEST] -->
